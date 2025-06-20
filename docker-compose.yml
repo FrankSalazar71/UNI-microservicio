@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+uni-microservicio:
+    image: franksalazar45/microsvc:3.0
+    container_name: contenedor_microsvc
+    ports:
+      - "8085:8085"
+    environment:
+      - PORT=8085
